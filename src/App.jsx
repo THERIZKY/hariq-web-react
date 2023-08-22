@@ -1,6 +1,6 @@
 // Importing Library
 import "animate.css";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,7 +13,7 @@ import "./App.css";
 
 // Importing Component
 import Home from "./Pages/Home";
-import Store from "./Pages/Store";
+import Perks from "./Pages/Perks";
 
 function App() {
 	useEffect(() => {
@@ -23,7 +23,8 @@ function App() {
 		<Router>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/store" element={<Store />} />
+				<Route path="/store" element={<Perks />} />
+				{/* <Route path="/store" element={<Store />} /> */}
 			</Routes>
 		</Router>
 	);
