@@ -50,7 +50,7 @@ const Card = ({ items, openModal }) => {
 							</button>
 							<button>
 								<a href="https://discord.hariq.eu.org/">
-									Beli Ranks
+									Buy Ranks
 								</a>
 							</button>
 						</div>

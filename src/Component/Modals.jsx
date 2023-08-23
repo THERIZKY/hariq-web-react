@@ -43,7 +43,7 @@ const Modal = ({ isOpen, onClose, selectedCardData }) => {
 					<div className="kanan">
 						<ul>
 							<li>
-								<p>Permission Pada Rank Sebelumnya</p>
+								<p>Semua Permission Di Rank Sebelumnya</p>
 							</li>
 							<li>{selectedCardData.permission.fly}</li>
 							<li>{selectedCardData.permission.list}</li>
