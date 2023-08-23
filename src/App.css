@@ -254,6 +254,8 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   width: 130px;
   height: 35px;
   background-color: #0d6efd;
+  border-radius: 10px;
+  border: 1px solid white;
 }
 .perks-container .card .card-container .card-footer button a {
   color: white;
@@ -269,13 +271,14 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
   transform: scale(0);
-  transition: all 0.5s linear;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
 .perks-container .modal.show {
   opacity: 1;
@@ -290,6 +293,7 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   color: white;
   width: 60rem;
   height: 30rem;
+  max-width: 59rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -298,11 +302,38 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   width: 100%;
   padding-top: 20px;
 }
+.perks-container .modal .modal-container .modal-header h3 {
+  padding-top: 50px;
+}
 .perks-container .modal .modal-container .modal-content {
   display: flex;
   justify-content: space-around;
   width: 100%;
   text-align: center;
+}
+.perks-container .modal .modal-container .modal-content .kiri {
+  width: 100%;
+}
+.perks-container .modal .modal-container .modal-content .tengah {
+  display: block;
+  width: 100%;
+}
+.perks-container .modal .modal-container .modal-content .tengah ul {
+  display: flex;
+  flex-direction: column;
+}
+.perks-container .modal .modal-container .modal-content .tengah ul li {
+  list-style-type: none;
+}
+.perks-container .modal .modal-container .modal-content .kanan {
+  width: 100%;
+}
+.perks-container .modal .modal-container .modal-content .kanan ul {
+  display: flex;
+  flex-direction: column;
+}
+.perks-container .modal .modal-container .modal-content .kanan ul li {
+  list-style-type: none;
 }
 .perks-container .modal .modal-container .modal-footer {
   width: 100%;
@@ -410,6 +441,30 @@ footer .footer-container img {
     background-position: 0px 300px;
   }
 }
+@media (min-width: 2000px) {
+  .perks-container .container-cards {
+    width: 100%;
+  }
+  .perks-container .container-cards .card {
+    width: 25rem;
+    height: 36rem;
+  }
+  .perks-container .container-cards .card .card-container .card-footer button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #0d6efd;
+  }
+  .perks-container .container-cards .card .card-container .card-footer button a {
+    color: white;
+  }
+  .perks-container .container-cards .card .card-container .card-footer .info {
+    background-color: #198754;
+    width: 70px;
+    color: white;
+  }
+}
 @media (max-width: 992px) {
   .perks-container {
     padding-top: 8rem;
@@ -476,5 +531,10 @@ footer .footer-container img {
     width: 100%;
     text-align: center;
     padding-left: 0;
+  }
+  .modal .modal-container .modal-content {
+    max-width: 80%;
+    flex-direction: column;
+    gap: 20px;
   }
 }/*# sourceMappingURL=App.css.map */

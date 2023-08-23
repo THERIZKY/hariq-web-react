@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [isActiveMenu, setIsActiveMenu] = useState(false);
@@ -16,10 +17,10 @@ const Navbar = () => {
 					<img src="/img/h-logo_1.png" alt="logo" />
 				</div>
 				<div className={`nav-button ${isSidebarOn ? "sidebarOn" : ""}`}>
-					<a href="/">Home</a>
-					<a href="/store">Store</a>
-					<a href="/rules">Rules</a>
-					<a href="/staffs">Staffs</a>
+					<Link to="/">Home</Link>
+					<Link to="/store">Store</Link>
+					<Link to="/rules">Rules</Link>
+					<Link to="/staffs">Staffs</Link>
 				</div>
 				<div
 					className={`menu-toggle ${isActiveMenu ? "active" : ""}`}

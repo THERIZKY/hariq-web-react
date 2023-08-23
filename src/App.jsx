@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // React things
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -21,6 +21,7 @@ function App() {
 	useEffect(() => {
 		AOS.init();
 	}, []);
+
 	return (
 		<>
 			<Router>

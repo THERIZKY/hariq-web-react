@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet";
 import Navbar from "../Component/Navbar";
 
 const Store = () => {
 	return (
 		<div className="container">
+			<Helmet>
+				<title>Ranks Store || Hariq Mc</title>
+			</Helmet>
 			<Navbar />
 			<div className="store-container">
 				<div className="bigetron">
