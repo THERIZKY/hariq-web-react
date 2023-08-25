@@ -353,6 +353,63 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   color: black;
 }
 
+.header-rules {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.header-rules i {
+  color: red;
+  padding-inline: 25px;
+}
+.header-rules h1 {
+  color: white;
+}
+
+.rules-container {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  gap: 30px;
+  justify-content: center;
+}
+.rules-container .rules-header {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.rules-container .rules-header img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.rules-container .rules-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 1000px;
+  color: white;
+}
+.rules-container .rules-content span {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.rules-container .rules-content .rules {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 20px;
+  padding-block: 40px;
+  width: 100%;
+  color: white;
+  letter-spacing: 2px;
+  border-left: 2px solid red;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 footer {
   display: flex;
   justify-content: center;
