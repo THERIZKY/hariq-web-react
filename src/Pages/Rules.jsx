@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import RulesContent from "../Component/template/RulesContent";
 
 import Navbar from "../Component/Navbar";
 const Rules = () => {
+	useEffect(() => {
+		document.title = "Hariq Rules || Hariq MC";
+		document.description = "Rules And Term In Hariq MC";
+	}, []);
+
 	return (
 		<>
 			<Navbar />
