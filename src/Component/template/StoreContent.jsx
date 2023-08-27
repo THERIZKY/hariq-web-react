@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Card from "../Card";
-import Modal from "../Modals";
+import Card from "../Element/Card";
+import Modal from "../Element/Modals";
 
 const StoreContent = () => {
 	// Use State

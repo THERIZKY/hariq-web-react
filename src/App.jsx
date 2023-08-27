@@ -16,6 +16,7 @@ import "./App.css";
 import Home from "./Pages/Home";
 import Perks from "./Pages/Perks";
 import Rules from "./Pages/Rules";
+import Staff from "./Pages/Staff";
 
 function App() {
 	useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/store" element={<Perks />} />
 					<Route path="/rules" element={<Rules />} />
+					<Route path="/staffs" element={<Staff />} />
 				</Routes>
 			</Router>
 			<Analytics />

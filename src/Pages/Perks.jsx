@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "../Component/Navbar";
+import Navbar from "../Component/Element/Navbar";
 import StoreContent from "../Component/template/StoreContent";
 
 const Perks = () => {

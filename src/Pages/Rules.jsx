@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import RulesContent from "../Component/template/RulesContent";
 
-import Navbar from "../Component/Navbar";
+import Navbar from "../Component/Element/Navbar";
 const Rules = () => {
 	useEffect(() => {
 		document.title = "Hariq Rules || Hariq MC";
