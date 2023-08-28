@@ -21,6 +21,23 @@ $defaultBg: #111827;
 // Bootstrap Color
 $text-success: #198754;
 $text-primary: #0d6efd;
+$text-yellow: yellow;
+
+// Role Color
+$ownerColor: red;
+$devColor: orange;
+$webDevColor: rgb(255, 218, 171);
+$helperColor: #2cc3c3;
+
+.text-blue {
+	color: $text-primary;
+	filter: drop-shadow(0px 0px 70px $text-primary);
+}
+
+.text-yellow {
+	color: $text-yellow;
+	filter: drop-shadow(0px 0px 70px $text-yellow);
+}
 
 * {
 	margin: 0;
@@ -264,6 +281,7 @@ nav {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	gap: 55px;
 	min-height: 100vh;
 	color: white;
 	// background-color: black;
@@ -519,113 +537,269 @@ nav {
 	}
 }
 
-// Footer
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 100vw;
-	height: 30rem;
-	background-color: $defaultBg;
+// Content yang ada di Staff
+.staff-container {
+	min-height: 100vh;
+	color: white;
 
-	.footer-container {
+	.staff-header {
 		display: flex;
-		justify-content: space-between;
-		padding-top: 5rem;
-		color: white;
-		// width: 67rem;
-		// height: 20rem;
+		height: 100vh;
+		flex-direction: column;
+		gap: 35px;
+		justify-content: center;
+		align-items: center;
 
-		.kiri {
+		.heading {
+			font-size: 32px;
+		}
+
+		.staff-text {
+			font-size: 18px;
+			letter-spacing: 2px;
+			max-width: 600px;
+		}
+
+		.buttonScroll {
+			display: flex;
+			justify-content: center;
+			width: 170px;
+			height: 60px;
+
+			button {
+				background-color: #2cc3c3;
+				border-radius: 15px;
+				width: 100%;
+				font-weight: 900;
+				filter: drop-shadow(20px -5px 65px #2cc3c3);
+				transition: all 0.2s ease;
+				border: 1px solid #2cc3c3;
+
+				&:hover {
+					box-shadow: 7px 3px 0px 1px rgba(44, 195, 195, 0.75);
+				}
+
+				&:active {
+					background-color: red;
+					color: white;
+					box-shadow: 7px 3px 0px 1px rgba(255, 0, 0, 0.75);
+				}
+			}
+		}
+	}
+
+	.staff-body {
+		height: 1200px;
+
+		.body-content {
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+			.container-staff-card {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.heading {
+				font-size: 60px;
+				font-weight: 900;
+
+				&.owner {
+					color: $ownerColor;
+				}
+
+				&.developer {
+					color: $devColor;
+				}
+
+				&.web-developer {
+					color: $webDevColor;
+				}
+
+				&.helper {
+					color: $helperColor;
+				}
+			}
+		}
+	}
+
+	.staff-card {
+		width: 18rem;
+		height: auto;
+		border: 1px solid white;
+		border-radius: 10px;
+		background-color: rgba($color: white, $alpha: 0.2);
+		text-align: left;
+		padding: 20px;
+
+		.staff-card-container {
 			display: flex;
 			flex-direction: column;
 			gap: 15px;
+		}
 
-			.copyright {
-				p {
-					padding-top: 10px;
-				}
-			}
-
-			.link {
-				a {
-					color: white;
-					font-size: 2rem;
-					transition: all 0.15s linear;
-
-					&:hover {
-						color: gold;
-					}
-				}
-
-				.fa-youtube {
-					padding-left: 10px;
-				}
+		.staff-card-header {
+			img {
+				width: 100px;
 			}
 		}
 
-		.tengah {
-			display: flex;
-			justify-content: space-between;
-			width: 20rem;
+		.staff-card-body {
+			span {
+				border: 1px solid white;
+				border-radius: 10px;
+				padding: 5px;
+				color: white;
 
-			.tengah-kiri {
-				h3 {
-					font-weight: 700;
+				&.owner {
+					background-color: $ownerColor;
 				}
-				ul {
-					padding-top: 25px;
 
-					li {
-						padding-top: 20px;
+				&.developer {
+					background-color: $devColor;
+				}
 
-						a {
-							color: white;
-							font-weight: 500;
-							transition: all 0.1s linear;
+				&.web-developer {
+					background-color: $webDevColor;
+				}
 
-							&:hover {
-								color: gray;
-							}
-						}
-					}
+				&.helper {
+					background-color: $helperColor;
 				}
 			}
 
-			.tengah-kanan {
-				h3 {
-					font-weight: 700;
-				}
-				ul {
-					padding-top: 25px;
-
-					li {
-						padding-top: 20px;
-
-						a {
-							color: white;
-							font-weight: 500;
-							transition: all 0.1s linear;
-
-							&:hover {
-								color: gray;
-							}
-						}
-					}
-				}
+			&.owner {
+				color: $ownerColor;
 			}
-		}
 
-		.kanan {
-			display: flex;
-			flex-direction: column;
-		}
+			&.developer {
+				color: $devColor;
+			}
 
-		img {
-			width: 10rem;
+			&.web-developer {
+				color: $webDevColor;
+			}
+
+			&.helper {
+				color: $helperColor;
+			}
 		}
 	}
 }
+
+// Footer
+// footer {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	min-width: 100vw;
+// 	height: 30rem;
+// 	background-color: $defaultBg;
+
+// 	.footer-container {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		padding-top: 5rem;
+// 		color: white;
+// 		// width: 67rem;
+// 		// height: 20rem;
+
+// 		.kiri {
+// 			display: flex;
+// 			flex-direction: column;
+// 			gap: 15px;
+
+// 			.copyright {
+// 				p {
+// 					padding-top: 10px;
+// 				}
+// 			}
+
+// 			.link {
+// 				a {
+// 					color: white;
+// 					font-size: 2rem;
+// 					transition: all 0.15s linear;
+
+// 					&:hover {
+// 						color: gold;
+// 					}
+// 				}
+
+// 				.fa-youtube {
+// 					padding-left: 10px;
+// 				}
+// 			}
+// 		}
+
+// 		.tengah {
+// 			display: flex;
+// 			justify-content: space-between;
+// 			width: 20rem;
+
+// 			.tengah-kiri {
+// 				h3 {
+// 					font-weight: 700;
+// 				}
+// 				ul {
+// 					padding-top: 25px;
+
+// 					li {
+// 						padding-top: 20px;
+
+// 						a {
+// 							color: white;
+// 							font-weight: 500;
+// 							transition: all 0.1s linear;
+
+// 							&:hover {
+// 								color: gray;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.tengah-kanan {
+// 				h3 {
+// 					font-weight: 700;
+// 				}
+// 				ul {
+// 					padding-top: 25px;
+
+// 					li {
+// 						padding-top: 20px;
+
+// 						a {
+// 							color: white;
+// 							font-weight: 500;
+// 							transition: all 0.1s linear;
+
+// 							&:hover {
+// 								color: gray;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.kanan {
+// 			display: flex;
+// 			flex-direction: column;
+// 		}
+
+// 		img {
+// 			width: 10rem;
+// 		}
+// 	}
+// }
 
 @keyframes animatedBackground {
 	0% {

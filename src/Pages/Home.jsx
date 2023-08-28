@@ -8,7 +8,7 @@ import MainContent from "../Component/template/MainContent";
 
 const Home = () => {
 	useEffect(() => {
-		document.title = "Home || Hariq Mc";
+		document.title = "HariqMC | Home";
 	}, []);
 
 	return (

@@ -4,7 +4,7 @@ import StoreContent from "../Component/template/StoreContent";
 
 const Perks = () => {
 	useEffect(() => {
-		document.title = "Hariq Store || Hariq MC";
+		document.title = "HariqMC | Store";
 	}, []);
 
 	return (

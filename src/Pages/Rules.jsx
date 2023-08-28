@@ -4,7 +4,7 @@ import RulesContent from "../Component/template/RulesContent";
 import Navbar from "../Component/Element/Navbar";
 const Rules = () => {
 	useEffect(() => {
-		document.title = "Hariq Rules || Hariq MC";
+		document.title = "HariqMC | Rules";
 		const MetaDataDesc = document.querySelector('meta[name="description"]');
 
 		MetaDataDesc.setAttribute(

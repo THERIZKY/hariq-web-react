@@ -158,7 +158,13 @@ const StoreContent = () => {
 
 	return (
 		<>
-			<div className="container-header animate__animated animate__fadeInDown">
+			<div className="container-cards">
+				{Ranks.map((item, index) => (
+					<Card key={index} items={item} openModal={modalHandler} />
+				))}
+			</div>
+
+			<div className="container-header" data-aos="fade-up">
 				<div className="header ">
 					<h1>Tata Cara Pembelian</h1>
 					<ul>
@@ -187,11 +193,6 @@ const StoreContent = () => {
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div className="container-cards">
-				{Ranks.map((item, index) => (
-					<Card key={index} items={item} openModal={modalHandler} />
-				))}
 			</div>
 
 			<div className="modals-container">

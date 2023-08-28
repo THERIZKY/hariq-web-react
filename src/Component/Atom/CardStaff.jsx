@@ -1,8 +1,15 @@
-const CardStaff = ({ image }) => {
+const CardStaff = ({ image, name, role, kelas }) => {
 	return (
-		<div className="card-staff">
-			<div>
-				<img src={image} alt="" />
+		<div className="staff-card">
+			<div className="staff-card-container">
+				<div className="staff-card-header">
+					<img src={image} alt="Kepala" />
+				</div>
+				<div className={`staff-card-body ${kelas}`}>
+					<div className="staff-card-name">
+						<span className={kelas}>{role}</span> {name}
+					</div>
+				</div>
 			</div>
 		</div>
 	);

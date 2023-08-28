@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@500&family=Staatliches&display=swap");
+.text-blue {
+  color: #0d6efd;
+  filter: drop-shadow(0px 0px 70px #0d6efd);
+}
+
+.text-yellow {
+  color: yellow;
+  filter: drop-shadow(0px 0px 70px yellow);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -193,6 +203,7 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  gap: 55px;
   min-height: 100vh;
   color: white;
   padding-top: 7rem;
@@ -410,84 +421,128 @@ nav .nav-container .menu-toggle.active .bar:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100vw;
-  height: 30rem;
-  background-color: #111827;
-}
-footer .footer-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5rem;
+.staff-container {
+  min-height: 100vh;
   color: white;
 }
-footer .footer-container .kiri {
+.staff-container .staff-header {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.staff-container .staff-header .heading {
+  font-size: 32px;
+}
+.staff-container .staff-header .staff-text {
+  font-size: 18px;
+  letter-spacing: 2px;
+  max-width: 600px;
+}
+.staff-container .staff-header .buttonScroll {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 60px;
+}
+.staff-container .staff-header .buttonScroll button {
+  background-color: #2cc3c3;
+  border-radius: 15px;
+  width: 100%;
+  font-weight: 900;
+  filter: drop-shadow(20px -5px 65px #2cc3c3);
+  transition: all 0.2s ease;
+  border: 1px solid #2cc3c3;
+}
+.staff-container .staff-header .buttonScroll button:hover {
+  box-shadow: 7px 3px 0px 1px rgba(44, 195, 195, 0.75);
+}
+.staff-container .staff-header .buttonScroll button:active {
+  background-color: red;
+  color: white;
+  box-shadow: 7px 3px 0px 1px rgba(255, 0, 0, 0.75);
+}
+.staff-container .staff-body {
+  height: 1200px;
+}
+.staff-container .staff-body .body-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.staff-container .staff-body .body-content .container-staff-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.staff-container .staff-body .body-content .heading {
+  font-size: 60px;
+  font-weight: 900;
+}
+.staff-container .staff-body .body-content .heading.owner {
+  color: red;
+}
+.staff-container .staff-body .body-content .heading.developer {
+  color: orange;
+}
+.staff-container .staff-body .body-content .heading.web-developer {
+  color: rgb(255, 218, 171);
+}
+.staff-container .staff-body .body-content .heading.helper {
+  color: #2cc3c3;
+}
+.staff-container .staff-card {
+  width: 18rem;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  padding: 20px;
+}
+.staff-container .staff-card .staff-card-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-footer .footer-container .kiri .copyright p {
-  padding-top: 10px;
+.staff-container .staff-card .staff-card-header img {
+  width: 100px;
 }
-footer .footer-container .kiri .link a {
+.staff-container .staff-card .staff-card-body span {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
   color: white;
-  font-size: 2rem;
-  transition: all 0.15s linear;
 }
-footer .footer-container .kiri .link a:hover {
-  color: gold;
+.staff-container .staff-card .staff-card-body span.owner {
+  background-color: red;
 }
-footer .footer-container .kiri .link .fa-youtube {
-  padding-left: 10px;
+.staff-container .staff-card .staff-card-body span.developer {
+  background-color: orange;
 }
-footer .footer-container .tengah {
-  display: flex;
-  justify-content: space-between;
-  width: 20rem;
+.staff-container .staff-card .staff-card-body span.web-developer {
+  background-color: rgb(255, 218, 171);
 }
-footer .footer-container .tengah .tengah-kiri h3 {
-  font-weight: 700;
+.staff-container .staff-card .staff-card-body span.helper {
+  background-color: #2cc3c3;
 }
-footer .footer-container .tengah .tengah-kiri ul {
-  padding-top: 25px;
+.staff-container .staff-card .staff-card-body.owner {
+  color: red;
 }
-footer .footer-container .tengah .tengah-kiri ul li {
-  padding-top: 20px;
+.staff-container .staff-card .staff-card-body.developer {
+  color: orange;
 }
-footer .footer-container .tengah .tengah-kiri ul li a {
-  color: white;
-  font-weight: 500;
-  transition: all 0.1s linear;
+.staff-container .staff-card .staff-card-body.web-developer {
+  color: rgb(255, 218, 171);
 }
-footer .footer-container .tengah .tengah-kiri ul li a:hover {
-  color: gray;
-}
-footer .footer-container .tengah .tengah-kanan h3 {
-  font-weight: 700;
-}
-footer .footer-container .tengah .tengah-kanan ul {
-  padding-top: 25px;
-}
-footer .footer-container .tengah .tengah-kanan ul li {
-  padding-top: 20px;
-}
-footer .footer-container .tengah .tengah-kanan ul li a {
-  color: white;
-  font-weight: 500;
-  transition: all 0.1s linear;
-}
-footer .footer-container .tengah .tengah-kanan ul li a:hover {
-  color: gray;
-}
-footer .footer-container .kanan {
-  display: flex;
-  flex-direction: column;
-}
-footer .footer-container img {
-  width: 10rem;
+.staff-container .staff-card .staff-card-body.helper {
+  color: #2cc3c3;
 }
 
 @keyframes animatedBackground {
