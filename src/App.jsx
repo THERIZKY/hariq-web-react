@@ -17,6 +17,7 @@ import Home from "./Pages/Home";
 import Perks from "./Pages/Perks";
 import Rules from "./Pages/Rules";
 import Staff from "./Pages/Staff";
+import CallApi from "./Pages/CallApi";
 
 function App() {
 	useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
 					<Route path="/store" element={<Perks />} />
 					<Route path="/rules" element={<Rules />} />
 					<Route path="/staffs" element={<Staff />} />
+					<Route path="/CallApi" element={<CallApi />} />
 				</Routes>
 			</Router>
 			<Analytics />

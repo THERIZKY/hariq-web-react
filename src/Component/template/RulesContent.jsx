@@ -94,7 +94,6 @@ const RulesContent = () => {
 					})}
 				</div>
 			</div>
-			<div className="rules-footer"></div>
 		</>
 	);
 };

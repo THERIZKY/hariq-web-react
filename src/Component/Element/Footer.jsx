@@ -5,7 +5,7 @@ const Footer = () => {
 				<div className="footer-container">
 					<div className="kiri">
 						<div className="logo">
-							<img src="/img/hariqabout.png" />
+							<img src="/img/hariqabout.png" className="w" />
 						</div>
 						<div className="copyright">
 							<p>Copyright © 2023 Hariq.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<div className="tengah">
+					<div className="tengah flex">
 						<div className="tengah-kiri">
 							<h3>Usefull Links</h3>
 							<ul>
